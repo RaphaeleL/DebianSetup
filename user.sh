@@ -26,5 +26,7 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 cp .dotfiles/own-theme.zsh-theme .oh-my-zsh/themes 
 
+# wallpapers
+git clone https://gitlab.com/dwt1/wallpapers
 
 
