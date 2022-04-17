@@ -17,7 +17,7 @@ apt update
 # Add base packages
 apt install unzip picom bspwm polybar sddm rofi kitty thunar flameshot neofetch sxhkd git lxpolkit lxappearance xorg -y
 apt install papirus-icon-theme lxappearance fonts-noto-color-emoji fonts-firacode fonts-font-awesome libqt5svg5 qml-module-qtquick-controls -y
-apt install variety chromium feh 
+apt install variety chromium feh zsh wget exa 
 
 # Download Nordic Theme
 cd /usr/share/themes/

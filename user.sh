@@ -16,4 +16,15 @@ sudo ./install.sh
 wget "https://raw.githubusercontent.com/RaphaeleL/DebianSetup/main/background.jpg"
 feh --bg-fill background.jpg
 
+# zsh 
+git clone https://github.com/RaphaeleL/.dotfiles d
+cp .dotfiles/.zshrc ~/
+ch-s /usr/bin/zsh 
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+cp .dotfiles/own-theme.zsh-theme .oh-my-zsh/themes 
+
+
 
